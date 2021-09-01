@@ -1,20 +1,13 @@
 import java.util.Scanner;
 class ChessBoard {
-    public int inputWeight(){
-        System.out.println("Input Weight:");
-        Scanner scanner = new Scanner(System.in);
-        int boardWeight=scanner.nextInt();
-        return boardWeight;
+    private int  height;
+    private  int  weight;
+
+    public ChessBoard(int height, int weight) {
+        this.height = height;
+        this.weight = weight;
     }
-    public int inputHeight(){
-        System.out.println("Input Height:");
-        Scanner scanner = new Scanner(System.in);
-        int boardHeight=scanner.nextInt();
-        return boardHeight;
-    }
-    public void printBoard(){
-        int height=inputHeight();
-        int weight=inputWeight();
+     public void printBoard(){
 
         for (int i=1;i<=height;i++){
             for (int j=1;j<=weight;j++){
